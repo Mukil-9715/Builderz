@@ -37,7 +37,7 @@ function App() {
       <div className="section_1">
         <div className="left">
           <div className="texth1">
-            We construct your <span className="outline">Dream</span>
+            We construct <br></br> your <span className="outline">Dream</span>
           </div>
           <div className="tp">
             <a href=""> Discover Project</a>
@@ -76,7 +76,7 @@ function App() {
           <div className="l">Our Works</div>
           <span className="strip"></span>
         </div>
-        <div className="flex">
+        <div className="flex0">
           <div className="serial_pic_child">
             <img
               className="serial_pic"
@@ -193,7 +193,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex1 con top">
+        <div className="flex1 con top ">
           <div className="flex3">
             <div className="th3">25</div>
             <div>Years Of Experience</div>

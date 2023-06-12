@@ -18,15 +18,15 @@ body {
 }
 .nav_app_title {
   font-family: "Iceberg", cursive;
-  font-size: 32px;
-  padding-left: 15px;
+  font-size: 2rem;
+  padding-left: 1rem;
 }
 .nav_titles {
   font-family: "Iceberg", cursive;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .nav_button {
-  width: 40%;
+  width: 40vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,7 +37,7 @@ body {
 }
 .section_1 {
   width: 100%;
-  height: 690px;
+  height: 100vh;
   background-color: rgb(232, 248, 255);
   display: flex;
   align-items: center;
@@ -45,18 +45,16 @@ body {
 }
 .section1_pic {
   margin-top: 4rem;
-  width: max(45vw, 5rem);
-  /* border-radius: 500px 500px 50px 50px; */
+  width: max(45vw, 25rem);
 }
 .left {
   margin-left: 8%;
 }
 .section2_pic {
-  width: 400px;
-  border-radius: 500px 500px 50px 50px;
+  width: max(30vw, 15rem);
 }
 .section_2 {
-  height: 650px;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -67,8 +65,8 @@ body {
   flex-wrap: wrap;
 }
 .section_2_right {
-  width: 40%;
-  height: 300px;
+  width: 40vw;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: self-start;
@@ -76,11 +74,11 @@ body {
   /* background-color: blueviolet; */
 }
 .strip {
-  padding-top: 7px;
-  width: 50px;
-  border-bottom: 4px solid rgb(1, 122, 255);
-  height: 5px;
-  border-radius: 4px;
+  padding-top: 0.5rem;
+  width: 3.125rem;
+  border-bottom: 0.25rem solid rgb(1, 122, 255);
+  height: 0.313rem;
+  border-radius: 0.25rem;
 }
 .flex {
   display: flex;
@@ -101,15 +99,15 @@ body {
   justify-content: space-around;
 }
 .l {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
   color: rgb(1, 122, 255);
   font-weight: 700;
-  font-size: 22px;
+  font-size: max(4vh, 1rem);
 }
 .section_3 {
   width: 100%;
-  height: 650px;
+  height: 100vh;
   background-color: rgb(232, 248, 255);
   /* display: flex;
   align-items:center;
@@ -125,46 +123,48 @@ body {
   overflow: hidden;
 }
 .space {
-  padding: 50px;
+  padding: 3.125rem;
 }
 .section_4 {
   width: 100%;
-  height: 850px;
-  margin-top: 25px;
+  height: 100%;
+  margin-top: 1.563rem;
 }
 .capabilities {
-  width: 300px;
+  width: 22vw;
   border: 0px solid gray;
-  border-radius: 25px;
-  padding: 25px;
+  border-radius: 1.563rem;
+  padding: 1.563rem;
   text-align: justify;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
 .capabilities_pic {
-  width: 60px;
+  width: 3.75rem;
 }
 .flex2 {
+  width: 85vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 25px;
+  margin-bottom: 1.563rem;
+  flex-wrap: wrap;
 }
 .c {
   color: rgb(1, 122, 255);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 .c1 {
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 .c2 {
   color: #fff;
   font-size: 14px;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
   list-style: none;
 }
 .outline {
@@ -174,16 +174,16 @@ body {
 }
 .texth1 {
   font-family: "Poppins", sans-serif;
-  font-size: 65px;
+  font-size: max(6vw, 2rem);
   font-weight: 600;
 }
 .texth2 {
   font-family: "Poppins", sans-serif;
-  font-size: 42px;
+  font-size: max(3vw, 1.25rem);
   font-weight: 600;
 }
 .cp {
-  font-size: 15px;
+  font-size: 0.938rem;
 }
 .con {
   width: 85%;
@@ -206,33 +206,30 @@ body {
   justify-content: center;
 }
 .th3 {
-  font-size: 32px;
-  font-weight: 700;
-}
-.th4 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
 }
 .top {
-  margin-top: 50px;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
 }
 .footer {
   width: 100%;
-  height: 300px;
+  height: 40vh;
   background-color: rgb(0, 141, 255);
   background-image: url(/src/png/contact\ abstract.png);
-  background-size: 1420px;
+  background-size: 88.75rem;
   background-repeat: no-repeat;
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
 .bg {
-  margin-top: -25px;
+  margin-top: -1.563rem;
 }
 .just {
   text-align: justify;
 }
 .marleft {
-  margin-left: -35px;
+  margin-left: -2.118rem;
 }
 .flex5 {
   /* width: 20%; */
@@ -242,7 +239,7 @@ body {
   justify-content: center;
 }
 .flex6 {
-  height: 105px;
+  height: 16vh;
   /* width: 20%; */
   display: flex;
   flex-direction: column;
@@ -250,72 +247,87 @@ body {
   justify-content: space-around;
 }
 .tm {
-  margin-top: 15px;
-  margin-right: 15px;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 .wd {
   width: 75%;
   margin-inline: auto;
 }
 li {
-  padding-bottom: 3px;
+  padding-bottom: 0.188rem;
 }
 .pad {
-  padding-right: 30px;
+  padding-right: 1.875rem;
 }
 .tp {
-  padding-top: 25px;
+  padding-top: 1.563rem;
 }
 
 a:link {
   color: white;
   background-color: rgb(0, 113, 227);
-  border-radius: 50px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 18px;
+  border-radius: 3.125rem;
+  padding: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.125rem;
   text-align: center;
   font-size: large;
   text-decoration: none;
-  margin: 25px;
+  margin: 0.5rem;
+  outline: none;
 }
 
 a:visited {
   color: white;
   background-color: rgb(0, 113, 227);
-  border-radius: 50px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 18px;
+  border-radius: 3.125rem;
+  padding: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.125rem;
   text-align: center;
   font-size: large;
   text-decoration: none;
-  margin: 25px;
+  margin: 0.5rem;
+  outline: none;
 }
 
 a:hover {
   color: white;
   background-color: rgb(0, 124, 248);
-  border-radius: 50px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 18px;
+  border-radius: 3.125rem;
+  padding: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.125rem;
   text-align: center;
   font-size: large;
   text-decoration: none;
-  margin: 25px;
+  margin: 0.5rem;
+  outline: none;
 }
 
 a:active {
   color: white;
   background-color: rgb(0, 124, 248);
-  width: 20px;
-  border-radius: 50px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 18px;
+  width: 1.25rem;
+  border-radius: 3.125rem;
+  padding: 0.625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.125rem;
   text-align: center;
   font-size: large;
   text-decoration: none;
-  margin: 25px;
+  margin: 0.5rem;
+  outline: none;
 }
+
+/* @media (max-width: 800px) {
+  .section_1 {
+    width: 100%;
+    height: 690px;
+    background-color: rgb(6, 180, 254);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+} */
