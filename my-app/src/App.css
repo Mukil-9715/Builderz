@@ -320,6 +320,9 @@ a:active {
   margin: 0.5rem;
   outline: none;
 }
+.pagepic{
+  margin-top: 4rem;
+}
 
 /* @media (max-width: 800px) {
   .section_1 {

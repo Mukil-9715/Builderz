@@ -9,7 +9,7 @@ const Projectpage = () => {
     <div>
       <Nav />
       <div>
-        <img src={projectpic} alt="" width="100%" />
+        <img className="pagepic" src={projectpic} alt="" width="100%" />
       </div>
 
       <Footer />

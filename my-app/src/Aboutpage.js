@@ -12,7 +12,7 @@ const Aboutpage = () => {
     <div>
         <Nav/>
 
-        <div><img src={aboutpic} alt="" width="100%" /></div>
+        <div><img className="pagepic" src={aboutpic} alt="" width="100%" /></div>
       <About />
       <Project />
       <Service />

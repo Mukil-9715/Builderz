@@ -11,7 +11,7 @@ const Servicepage = () => {
   return (
     <div>
         <Nav/>
-        <div><img src={servicepic} alt='' width="100%" /></div>
+        <div><img className="pagepic" src={servicepic} alt='' width="100%" /></div>
 
         <Service />
       <Footer />

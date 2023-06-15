@@ -8,7 +8,7 @@ const Contactpage = () => {
     <div>
       <Nav />
       <div>
-        <img src={contactpic} alt="" width="100%" />
+        <img className="pagepic" src={contactpic} alt="" width="100%" />
       </div>
 
       <Footer />
