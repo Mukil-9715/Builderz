@@ -1,6 +1,8 @@
 import React from 'react'
 import "./App.css";
 import plogo from "./png/main logo.png";
+import { Link, Routes, Route } from "react-router-dom";
+
 
 const Nav = () => {
   return (
@@ -12,11 +14,11 @@ const Nav = () => {
           <div className="nav_app_title"> BUILDERZ. </div>
         </div>
         <div className="nav_button">
-          <div className="nav_titles">Home</div>
-          <div className="nav_titles">About</div>
-          <div className="nav_titles">Project</div>
-          <div className="nav_titles">Service</div>
-          <div className="nav_titles">Contact</div>
+          <div><Link className='b' to="/">Home</Link></div>
+          <div><Link className='b' to="/About">About</Link></div>
+          <div><Link className='b' to="/Project">Project</Link></div>
+          <div><Link className='b' to="/Service">Service</Link></div>
+          <div><Link className='b' to="/Contact">Contact</Link></div>
         </div>
       </div>
   )

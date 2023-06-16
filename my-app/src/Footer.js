@@ -50,7 +50,7 @@ function Footer  () {
             <div className="c1">Contact</div>
             <div className="flex5">
               <div>
-                <img className="tm" src={contact} alt="" width="16px"></img>
+                <img className="tm" src={contact} alt="" width="22rem"></img>
               </div>
               <div className="c2 flex6">
                 <div>

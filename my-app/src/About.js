@@ -1,6 +1,8 @@
 import React from 'react'
 import "./App.css";
 import home1 from "./png/Screenshot 2023-03-25 151024.jpg";
+import { Link} from "react-router-dom";
+
 
 const About = () => {
   return (
@@ -16,14 +18,14 @@ const About = () => {
           <div className="texth2">
             We Offer You Professional Interior Design
           </div>
-          <div className="wrap">
+          <div className="wrap cp1">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
             explicabo aliquid alias numquam iure obcaecati atque! Ea recusandae
             ab iusto reiciendis temporibus, id blanditiis dolores sapiente non
             eum sint impedit.
           </div>
           <div className="tp">
-            <a href=""> Discover Project</a>
+          <div><Link className='a' to="/Project">Discover More</Link></div>
           </div>
         </div>
       </div>
