@@ -57,8 +57,7 @@ const Service = () => {
               sapiente non eum sint impedit.
             </div>
           </div>
-        </div>
-        <div className="flex2">
+        
           <div className="capabilities">
             <div>
               <img className="capabilities_pic" src={furniture} alt=""></img>

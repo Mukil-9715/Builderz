@@ -54,6 +54,7 @@ body {
   width: max(30vw, 15rem);
 }
 .section_2 {
+  background-color: #F8FDFF;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -126,17 +127,19 @@ body {
   padding: 3.125rem;
 }
 .section_4 {
+  background-color: #F8FDFF;
   width: 100%;
   height: 100%;
-  margin-top: 1.563rem;
+  /* margin-top: 1.563rem; */
 }
 .capabilities {
-  width: 22vw;
+  width: max(20vw, 17vw);
   border: 0px solid gray;
   border-radius: 1.563rem;
   padding: 1.563rem;
   text-align: justify;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1.25rem 0 rgba(0, 0, 0, 0.19);
+  margin: 25px;
 }
 .capabilities_pic {
   width:max(4vh, 3.75rem);
@@ -151,6 +154,11 @@ body {
 }
 .c {
   color: rgb(1, 122, 255);
+  font-size: max(2.5vh, 1.25rem );
+  font-weight: 500;
+  padding-bottom: 0.625rem;
+}
+.c0 {
   font-size: max(2.5vh, 1.25rem );
   font-weight: 500;
   padding-bottom: 0.625rem;
@@ -213,8 +221,8 @@ body {
   font-weight: 700;
 }
 .top {
-  margin-top: 3.125rem;
-  margin-bottom: 3.125rem;
+  /* padding-top: 3.125rem; */
+  padding-bottom: 3.125rem;
 }
 .footer {
   width: 100%;
@@ -355,20 +363,68 @@ li {
   height: 100%;
 }
 .work_container{
-  width: 70%;
+  width: 89%;
   margin-inline:auto ;
+  height: 100%;
+  display: flex;
+  place-items: center ;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+
+}
+.contact_title{
+  text-align: center;
+}
+.contact_main{
+  width: 100%;
   height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 2rem;
-  grid-auto-flow: column;
+}
+.contact_contacts{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-inline: auto;
+  
+}
+.conpic{
+  margin-top: 100px;
 }
 .work_child{
-  background-color: aquamarine;
-  border-radius: 1.5rem;
+  /* background-color: aquamarine; */
+  width: 400px;
+  height: 400px;
+  margin: 40px;
+  flex-grow: 1;
 }
+.work_img{
+  border-radius: 1.5rem;
 
+}
+.cap {
+  width: max(14vw, 10vw);
+  height: max(14vw, 10vw);
+  border: 0px solid gray;
+  border-radius: 1.563rem;
+  padding: 1.563rem;
+  /* text-align: justify; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1.25rem 0 rgba(0, 0, 0, 0.19);
+  /* margin: 50px; */
+}
+.cap1 {
+  width: max(60vw, 10vw);
+  border: 0px solid gray;
+  border-radius: 1.563rem;
+  padding: 1.563rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1.25rem 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.tinput{
+  width: 25vw;
+  
+}
 /* @media (max-width: 800px) {
   .section_1 {
     width: 100%;
