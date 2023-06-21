@@ -5,6 +5,8 @@ import Footer from "./Footer";
 import callpic from "./png/contact/call icon.png";
 import locpic from "./png/contact/location icon.png";
 import mailpic from "./png/contact/mail icon.png";
+import { Link} from "react-router-dom";
+
 
 const Contactpage = () => {
   return (
@@ -13,7 +15,7 @@ const Contactpage = () => {
       <div>
         <img className="pagepic" src={contactpic} alt="" width="100%" />
       </div>
-      <div className="contact_main flex3">
+      <div className="contact_main flex3 bc">
         <div className=" flex0 contact_contacts">
           <div className="cap flex3">
             <div>
@@ -49,14 +51,15 @@ const Contactpage = () => {
             </div>
           </div>
         </div>
-        <div className="contact_title texth2">Have Any Question?</div>
+        <div className="contact_title texth2 padd">Have Any Question?</div>
         <div className="contact_container">
-          <form>
-            <div className="cap1">
+          <form className="cap1">
+            <div className="ca">
                   <input className="tinput" type="text" placeholder="Name" />
-                  <input className="tinput" type="text" placeholder="Name" />
-                  <textarea className="tinput"></textarea>
+                  <input className="tinput" type="text" placeholder="Email" />
+                  <textarea className="tinput1" placeholder="Message"></textarea>
             </div>
+            <div className="flex0"><Link className="a" >Send Message</Link></div>
           </form>
         </div>
       </div>

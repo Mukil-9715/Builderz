@@ -9,7 +9,7 @@ import professional_design from "./png/service/professional design.png";
 
 const Service = () => {
   return (
-    <div className="section_4">
+    <div className="section_4 ">
       <div className="flex0 space">
         <span className="strip"></span>
         <div className="l">OUR CAPABILITIES</div>
