@@ -11,7 +11,7 @@ import img8 from './png/product image/interior3.png'
 import img9 from './png/product image/interior4.png'
 
 
-const ionalRendering = () => {
+const ConditionalRendering = () => {
     const Images = [img1,
         img2,
         img3,
@@ -33,4 +33,4 @@ const ionalRendering = () => {
   );
 };
 
-export default ionalRendering;
+export default ConditionalRendering;
