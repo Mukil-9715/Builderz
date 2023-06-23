@@ -4,12 +4,12 @@ import "./App.css";
 const Project = () => {
   return (
     <div className="section_3 ">
-        <div className="flex0 space">
+        <div className="flex0 space1">
           <span className="strip"></span>
           <div className="l">Our Works</div>
           <span className="strip"></span>
         </div>
-        <div className="flex0">
+        <div className="flex0 ht">
           <div className="serial_pic_child">
             <img
               className="serial_pic"

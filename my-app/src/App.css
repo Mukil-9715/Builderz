@@ -125,6 +125,9 @@ body {
 .space {
   padding: 3.125rem;
 }
+.space1 {
+  padding-top: 5rem;
+}
 .section_4 {
   background-color: #f8fdff;
   width: 100%;
@@ -452,6 +455,9 @@ li {
 }
 .padd{
   padding:2.5rem ;
+}
+.ht {
+  height:80vh ;
 }
 /* @media (max-width: 800px) {
   .section_1 {

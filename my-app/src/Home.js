@@ -7,22 +7,22 @@ import About from './About'
 import Project from './Project'
 import Service from './Service'
 import Footer from './Footer'
-import axios from 'axios'
+// import axios from 'axios'
 
 
 
 const Home = () => {
-  const [message, setMessage] = useState(''); 
+  // const [message, setMessage] = useState(''); 
 
-  useEffect(() => {
-    const getData = async () => {
-      let got = await axios.get("https://api-server.hostrain.in/api/homepage");
-      setMessage(got.data.message);
-    };
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     let got = await axios.get("https://api-server.hostrain.in/api/homepage");
+  //     setMessage(got.data.message);
+  //   };
 
-    getData();
-  }, []);
-  console.log('message',message)
+  //   getData();
+  // }, []);
+  // console.log('message',message)
   return (
     <div className="master_container">
 
@@ -31,8 +31,8 @@ const Home = () => {
       <div className="section_1">
         <div className="left">
           <div className="texth1">
-            {message}
-            {/* We construct <br></br> your <span className="outline">Dream</span> */}
+            {/* {message} */}
+            We construct <br></br> your <span className="outline">Dream</span>
           </div>
           <div className="tp">
             <div><Link className='a' to="/Project">Discover Project</Link></div>
@@ -45,7 +45,8 @@ const Home = () => {
       </div>
 
 
-      {message && <About mukil={message}/>}
+      {/* {message && <About mukil={message}/>} */}
+      <About/>
       <Project />
       <Service />
       <Footer />

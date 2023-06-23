@@ -20,21 +20,21 @@ Comment:comment};
 console.log(obj);
 
 
-const gettingData = (e)=>{
-  const {name, value} = e.target;
-  console.log('value',value)
+// const gettingData = (e)=>{
+//   const {name, value} = e.target;
+//   console.log('value',value)
 
-  if(name === 'fname'){
-    setName(value)
-  }
-  else if(name === 'email'){
-    setMail(value)
-  }
-  else if(name === 'msg'){
-    setComment(value)
-  }
-}
-console.log('name',name)
+//   if(name === 'fname'){
+//     setName(value)
+//   }
+//   else if(name === 'email'){
+//     setMail(value)
+//   }
+//   else if(name === 'msg'){
+//     setComment(value)
+//   }
+// }
+// console.log('name',name)
   return (
     <div>
       <Nav />
@@ -87,7 +87,7 @@ console.log('name',name)
                 placeholder="Name"
                 name='fname'
                 onChange={(e) => {
-                  gettingData(e);
+                  setName(e.target.value);
                 }}
               />
               <input
@@ -96,7 +96,7 @@ console.log('name',name)
                 placeholder="Email"
                 name='email'
                 onChange={(e) => {
-                  gettingData(e);
+                  setMail(e.target.value)
                 }}
               />
               <textarea
@@ -104,7 +104,7 @@ console.log('name',name)
                 placeholder="Message"
                 name='msg'
                 onChange={(e) => {
-                  gettingData(e);
+                  setComment(e.target.value)
                 }}
               ></textarea>
             </div>
@@ -114,7 +114,6 @@ console.log('name',name)
           </form>
         </div>
       </div>
-      <RenderImage />
       <Footer />
     </div>
   );
