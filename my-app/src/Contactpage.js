@@ -5,10 +5,36 @@ import Footer from "./Footer";
 import callpic from "./png/contact/call icon.png";
 import locpic from "./png/contact/location icon.png";
 import mailpic from "./png/contact/mail icon.png";
-import { Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import RenderImage from "./RenderImage";
+import { useState } from "react";
 
 const Contactpage = () => {
+  const [name, setName] = useState("");
+  const [mail, setMail] = useState("");
+  const [comment, setComment] = useState("");
+
+  let obj = { Name: name,
+  Email:mail,
+Comment:comment};
+console.log(obj);
+
+
+const gettingData = (e)=>{
+  const {name, value} = e.target;
+  console.log('value',value)
+
+  if(name === 'fname'){
+    setName(value)
+  }
+  else if(name === 'email'){
+    setMail(value)
+  }
+  else if(name === 'msg'){
+    setComment(value)
+  }
+}
+console.log('name',name)
   return (
     <div>
       <Nav />
@@ -55,15 +81,40 @@ const Contactpage = () => {
         <div className="contact_container">
           <form className="cap1">
             <div className="ca">
-                  <input className="tinput" type="text" placeholder="Name" />
-                  <input className="tinput" type="text" placeholder="Email" />
-                  <textarea className="tinput1" placeholder="Message"></textarea>
+              <input
+                className="tinput"
+                type="text"
+                placeholder="Name"
+                name='fname'
+                onChange={(e) => {
+                  gettingData(e);
+                }}
+              />
+              <input
+                className="tinput"
+                type="text"
+                placeholder="Email"
+                name='email'
+                onChange={(e) => {
+                  gettingData(e);
+                }}
+              />
+              <textarea
+                className="tinput1"
+                placeholder="Message"
+                name='msg'
+                onChange={(e) => {
+                  gettingData(e);
+                }}
+              ></textarea>
             </div>
-            <div className="flex0"><Link className="a" >Send Message</Link></div>
+            <div className="flex0">
+              <Link className="a">Send Message</Link>
+            </div>
           </form>
         </div>
       </div>
-
+      <RenderImage />
       <Footer />
     </div>
   );

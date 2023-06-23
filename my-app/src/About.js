@@ -4,7 +4,8 @@ import home1 from "./png/Screenshot 2023-03-25 151024.jpg";
 import { Link} from "react-router-dom";
 
 
-const About = () => {
+const About = (props) => {
+ const {mukil}=props 
   return (
     <div className="section_2">
         <div className="section_2_left">
@@ -16,7 +17,7 @@ const About = () => {
             <div className="l">About Us</div>
           </div>
           <div className="texth2">
-            We Offer You Professional Interior Design
+            {mukil}
           </div>
           <div className="wrap cp1">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
